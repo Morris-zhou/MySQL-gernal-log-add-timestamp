@@ -8,7 +8,7 @@ MySQL DBA 经常会在全日志中定位问题SQL，但是现阶段实例一天�
 
 ### 二、使用方法
 假如按照指定时间来截取日志：</br>
-python log.py -b '170327  1:30:00' -e '170327  2:30:00' -f '/data/opdir/zhouyangfan/mysql.log' -s 1024 -r '/data/opdir/zhouyangfan/tmp.txt'
+python log.py -b '170327  1:30:00' -e '170327  2:30:00' -f '/data/opdir/mysql.log' -s 1024 -r '/data/opdir/result.log'
     
 -b:开始截取时间戳（可以不加该选项，默认从头开始）
 
