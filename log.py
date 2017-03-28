@@ -28,7 +28,6 @@ pattern_2 = re.compile(r'[\d]{6}[\s][\s]?[\d][\d]?[:][\d]{2}[:][\d]{2}[\s].*')
 pattern_3 = re.compile(r'[\d]{6}[\s][\s]?[\d][\d]?[:][\d]{2}[:][\d]{2}')
 
 
-
 class ReadLog():
 
     def __init__(self):
@@ -74,8 +73,6 @@ class ReadLog():
                     self.Write(atom)
                 elif self.numberical(timestamp) > self.numberical(self.end_time):
                     break
-
-
 
 if __name__ == '__main__':
     a = ReadLog()
