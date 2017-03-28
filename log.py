@@ -1,9 +1,7 @@
 #/usr/bin/env python
 
-
 from optparse import OptionParser
 import re
-
 
 parser = OptionParser(usage = "%prog -b '171027  12727' -e '171027  13727' -f '/data/mysql.log'",version = "%prog 1.0" )
 parser.add_option("-b", "--begin_time",
@@ -48,6 +46,7 @@ class ReadLog():
                     yield data
                 else:
                     return
+    
     def Write(self,data):
         with open (self.result_path,'a') as f:
             f.writelines(data)
